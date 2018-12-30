@@ -1,0 +1,67 @@
+body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wikicard hr {
+  border-width: 1px 0 0 0;
+  border-color: #888;
+}
+.wikicard {
+  margin: 1em;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 800px;
+  min-width: 400px;
+  padding: 0.5em;
+}
+.wikicard input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.5em;
+  color: black;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0.5em;
+}
+.wikicard .headings h1 {
+  margin: 0;
+}
+.wikicard .headings {
+  margin: 1em 0;
+  text-align: center;
+}
+.wikicard img {
+  display: block;
+  margin: 0.5em auto;
+}
+.wikicard p {
+  font-size: 1.2em;
+}
+.loadingSpinner {
+  position:relative;
+  background-color: #875fd7;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 1em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadingSpinner div:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: pulse 1s ease-out infinite;
+}
+@keyframes pulse {
+  0% { width: 0%; height: 0%; }
+  90% { width: 100%; height: 100%; }
+}
